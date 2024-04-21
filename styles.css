@@ -74,6 +74,7 @@ header p{
     padding-left: 15px;
     padding-right: 100px;
     
+    
 }
 form{
     margin-bottom: 60px;
@@ -88,6 +89,7 @@ border-radius: 30px;
 box-shadow: 0px 0px 9px inherit;
 color: white;
 font-weight: 300;
+cursor: poiner;
 
 }
 .dashboard{
@@ -106,10 +108,44 @@ picture{
     color: var(--Blue);
     
 }
+picture i {
+    border: .1px solid var(--Very-Dark-Blue);
+    width: 30px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 footer span{
     font-size: 10px;
     color: var(--Gray);
     opacity: 0.7;
+}
+
+.valid{
+    display: none;
+}
+.invalid{
+    
+    color: red;
+    
+}
+.error .active{
+    color: red;
+    
+    
+    
+}
+.error{
+    
+    color: red;
+    position: relative;
+    bottom: 50px;
+    right: 130px;
+    font-size: 10px;
+    
 }
 
 @media (max-width: 375px) {
@@ -117,7 +153,38 @@ footer span{
         max-width: 375px;
         display: flex;
         flex-direction: column;
-        background-color: red;
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:  center;
+        overflow: hidden;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .submitbtn{
+        margin-top: 30px;
+        width: 285px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .error{
+        position: relative;
+        bottom: 118px;
+        left: 0px;
     }
 }
 
